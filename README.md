@@ -404,7 +404,6 @@ SELECT action::text, ip_address, created_at FROM audit_logs ORDER BY id DESC LIM
 
 ---
 
-## Licencia
+## Ricardo Daniel FLores Zavala
 
-Proyecto entregado como prueba tecnica. Uso libre con fines educativos y de
-evaluacion.
+Uso para fines de entrevista tecnica para TAVERON como Desarrollador Full Stack.
