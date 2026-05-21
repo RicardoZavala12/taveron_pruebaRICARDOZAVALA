@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', Inter, system-ui, sans-serif;
+  }
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+  }
+}
+
+@layer components {
+  /* Boton primario tipo pill azul */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-pill bg-brand-500 px-6 py-3 font-semibold text-white shadow-soft transition hover:bg-brand-600 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  /* Boton blanco pill estilo navbar de Taveron */
+  .btn-pill {
+    @apply inline-flex items-center justify-center gap-2 rounded-pill bg-white px-6 py-3 font-semibold text-ink-900 shadow-soft transition hover:bg-slate-100;
+  }
+
+  /* Boton secundario discreto sobre fondos claros */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-pill border border-slate-200 bg-white px-5 py-2.5 font-medium text-slate-700 transition hover:bg-slate-50;
+  }
+
+  /* Boton de accion peligrosa */
+  .btn-danger {
+    @apply inline-flex items-center justify-center gap-2 rounded-pill bg-red-50 px-5 py-2.5 font-medium text-red-700 transition hover:bg-red-100;
+  }
+
+  /* Tarjeta blanca con bordes redondeados estilo Taveron */
+  .card {
+    @apply rounded-card bg-white p-6 shadow-soft;
+  }
+
+  /* Input con estilo redondeado y suave */
+  .input {
+    @apply w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-slate-900 placeholder-slate-400 transition focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100;
+  }
+
+  .label {
+    @apply mb-1.5 block text-sm font-semibold text-slate-700;
+  }
+
+  /* Gradiente del hero (azul a cian) inspirado en la landing de Taveron */
+  .bg-hero {
+    background: linear-gradient(135deg, #003d99 0%, #0066ff 45%, #22d3ee 100%);
+  }
+}
